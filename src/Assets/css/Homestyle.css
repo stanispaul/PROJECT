@@ -196,7 +196,7 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
 }
 
 header {
-    background-color: #333;
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
     color: #fff;
     width:102.5%;
     /* padding: 10px 20px; */
