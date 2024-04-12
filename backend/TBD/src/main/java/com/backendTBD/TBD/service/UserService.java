@@ -22,7 +22,7 @@ public class UserService {
 
     public ResponseEntity<?> saveUser(User user) {
         Optional<User> userExists = userRepo.findByEmail(user.getEmail());
-        if (!userExists.isPresent()) {
+        if (userExists.isEmpty()) {
             userRepo.save(user);
             return new ResponseEntity<>("User created successfully", HttpStatus.CREATED);
         } else {
